@@ -819,7 +819,7 @@
 		pinctrl-names = "default";
 		#address-cells = <0x01>;
 		#size-cells = <0x00>;
-		status = "disabled";
+		status = "okay";
 		phandle = <0x14f>;
 
 		regulator@42 {
@@ -895,7 +895,7 @@
 		pinctrl-0 = <0x36>;
 		pinctrl-names = "default";
 		#pwm-cells = <0x03>;
-		status = "disabled";
+		status = "okay";
 		phandle = <0x136>;
 	};
 
@@ -919,7 +919,7 @@
 		pinctrl-0 = <0x38>;
 		pinctrl-names = "default";
 		#pwm-cells = <0x03>;
-		status = "disabled";
+		status = "okay";
 		phandle = <0x153>;
 	};
 
@@ -1412,7 +1412,7 @@
 		resets = <0x21 0x1d8>;
 		reset-names = "tx-m";
 		#sound-dai-cells = <0x00>;
-		status = "disabled";
+		status = "okay";
 		phandle = <0x1e>;
 	};
 
@@ -1801,7 +1801,7 @@
 		reset-names = "pwr\0pipe";
 		#address-cells = <0x03>;
 		#size-cells = <0x02>;
-		status = "disabled";
+		status = "okay";
 		pinctrl-names = "default";
 		pinctrl-0 = <0x82>;
 		reset-gpios = <0x83 0x02 0x00>;
@@ -1844,7 +1844,7 @@
 		reset-names = "pwr\0pipe";
 		#address-cells = <0x03>;
 		#size-cells = <0x02>;
-		status = "disabled";
+		status = "okay";
 		pinctrl-names = "default";
 		pinctrl-0 = <0x87>;
 		reset-gpios = <0x83 0x04 0x00>;
@@ -1985,7 +1985,7 @@
 		pinctrl-names = "default";
 		pinctrl-0 = <0x8c 0x8d 0x8e 0x8f>;
 		power-domains = <0x22 0x28>;
-		status = "disabled";
+		status = "okay";
 		bus-width = <0x04>;
 		cap-sd-highspeed;
 		disable-wp;
@@ -2025,7 +2025,7 @@
 		pinctrl-names = "default";
 		resets = <0x21 0x118 0x21 0x116 0x21 0x117 0x21 0x119 0x21 0x11a>;
 		reset-names = "core\0bus\0axi\0block\0timer";
-		status = "disabled";
+		status = "okay";
 		bus-width = <0x08>;
 		mmc-hs400-1_8v;
 		mmc-hs400-enhanced-strobe;
@@ -2074,7 +2074,7 @@
 		pinctrl-names = "default";
 		pinctrl-0 = <0x9b 0x9c 0x9d 0x9e 0x9f>;
 		#sound-dai-cells = <0x00>;
-		status = "disabled";
+		status = "okay";
 		phandle = <0x132>;
 	};
 
@@ -2261,7 +2261,7 @@
 		pinctrl-names = "default";
 		#address-cells = <0x01>;
 		#size-cells = <0x00>;
-		status = "disabled";
+		status = "okay";
 		phandle = <0x17a>;
 
 		regulator@42 {
@@ -2949,7 +2949,7 @@
 		pinctrl-0 = <0xd7>;
 		pinctrl-names = "default";
 		#pwm-cells = <0x03>;
-		status = "disabled";
+		status = "okay";
 		phandle = <0x135>;
 	};
 
@@ -2961,7 +2961,7 @@
 		pinctrl-0 = <0xd8>;
 		pinctrl-names = "default";
 		#pwm-cells = <0x03>;
-		status = "disabled";
+		status = "okay";
 		phandle = <0x1a1>;
 	};
 
@@ -3021,7 +3021,7 @@
 		pinctrl-0 = <0xdd>;
 		pinctrl-names = "default";
 		#pwm-cells = <0x03>;
-		status = "disabled";
+		status = "okay";
 		phandle = <0x1a6>;
 	};
 
@@ -3265,7 +3265,7 @@
 		pinctrl-names = "default";
 		#address-cells = <0x01>;
 		#size-cells = <0x00>;
-		status = "disabled";
+		status = "okay";
 		clock-frequency = <0x30d40>;
 		phandle = <0x1b7>;
 
@@ -3347,7 +3347,7 @@
 		pinctrl-names = "default";
 		#address-cells = <0x01>;
 		#size-cells = <0x00>;
-		status = "disabled";
+		status = "okay";
 		clock-frequency = <0x30d40>;
 		phandle = <0x1bb>;
 
@@ -3373,7 +3373,7 @@
 		pinctrl-names = "default";
 		#address-cells = <0x01>;
 		#size-cells = <0x00>;
-		status = "disabled";
+		status = "okay";
 		phandle = <0x1bc>;
 	};
 
