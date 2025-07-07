@@ -65,4 +65,42 @@ dtc -I dtb -O dts -o rk3588-camera-build.dts rk3588-friendly-naskit-CM3588.dtb
 
 ---
 
+### 🚀 Hoàn tất quá trình build và áp dụng `.dtb`
+
+#### **Bước 6**: Build lại file `.dtb` từ file `.dts` đã chỉnh sửa
+
+```bash
+dtc -I dts -O dtb -o rk3588-camera-build.dtb rk3588-camera-build.dts
+```
+
+#### **Bước 7**: Copy file `.dtb` mới vào thư mục `/boot/dtb/rockchip`
+
+```bash
+cp rk3588-camera-build.dtb /boot/dtb/rockchip
+```
+
+#### **Bước 8**: Hiệu chỉnh file `armbianEnv.txt` để chọn file `.dtb` khi boot
+
+Mở file `/boot/armbianEnv.txt` và sửa dòng:
+
+```ini
+fdtfile=rockchip/rk3588-friendly-naskit-CM3588.dtb
+```
+
+thành:
+
+```ini
+fdtfile=rockchip/rk3588-camera-build.dtb
+```
+
+#### **Bước 9**: Khởi động lại thiết bị
+
+```bash
+sudo reboot
+```
+
+Hoặc tắt nguồn và bật lại thiết bị thủ công.
+
+---
+
 ✅ *Hoàn thành bước bring-up thành công hệ điều hành và thiết bị mạng trên CM3588.*
